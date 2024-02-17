@@ -99,7 +99,8 @@ const Head = () =>{
                 <input className="px-5 border-2 rounded-l-full border-slate-400 w-1/2 p-1" placeholder="Search"
                 type="text" value={searchQuery} onChange={changeQuery} 
                 onFocus={()=>setShowSuggestions(true)}
-                onBlur={()=>setShowSuggestions(false)}/>
+                onBlur={()=>setShowSuggestions(false)}
+                onScroll={()=>setShowSuggestions(false)}/>
                 
                 <button className="border-2 rounded-r-full border-slate-500 p-1 w-12 bg-slate-200">
                     🔍
